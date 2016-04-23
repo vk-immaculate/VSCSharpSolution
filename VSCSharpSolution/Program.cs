@@ -10,10 +10,19 @@ namespace VSCSharpSolution
     {
         static void Main(string[] args)
         {
-            string InputMessage;
+
             Console.WriteLine("Please enter your name ?");
-            InputMessage = Console.ReadLine();
-            Console.WriteLine("Are you {0}", InputMessage);
+
+            string InputMessage = Console.ReadLine();
+
+            if (InputMessage == "")
+            {
+                Console.WriteLine("You should be an idiot.");
+            } else
+            {
+                Console.WriteLine("Are you really {0}", InputMessage);
+            }
+            
             Console.ReadLine();
         }
     }
